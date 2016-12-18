@@ -1,0 +1,9 @@
+bot_token = "232530850:AAHc3H-fyjlnAl5vnOUVLF7W1-UPOg3HaWc"
+send_api = "https://api.telegram.org/bot"..bot_token
+bot_version = "6.0"
+sudo_name = "Engineer Emad Farhani"
+sudo_id = 205816573
+admingp = -1001062568114
+sudo_num = "989030532835"
+sudo_user = "Emad_farhani"
+sudo_ch = "lTSHAKEl_CH"
