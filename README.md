@@ -1,26 +1,31 @@
+<a href="telegram.me/emad_farhani"><h1>Emad farhani</h1></a>
+<h2>WASLTSHAKE</h2><br><br><br>
+<h1><mark>طریقه التنصیب</mark></h1>
+<pre>
+توکن البوت تلعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
 
-بالاول افتحو سیرفر و خلو
 git clone https://github.com/moodlIMyIl/WASLTSHAKE.git
-و دوس اینتر
-بعدین 
+
+بعدین دزو هل اوامر 
+
 sudo apt-get update
-وراه
 sudo apt-get install lua5.1 luarocks lua-socket lua-sec redis-server curl 
-وراه
 sudo luarocks install oauth 
-وراه
 sudo luarocks install redis-lua 
-وراه
 sudo luarocks install lua-cjson 
-وراه
 sudo luarocks install ansicolors 
-وراه
 sudo luarocks install serpent
-بعدین ادخلو علی ملف کانفیگ و حطو اتوکن البوت تبعکم و ایدیکم و ایدی المجموعه تحذیر اذا مجموعتکم سوبر بالاول الایدی خلو 100 و بعدین حطو الایدی
-و افتحو و خلو 
+
+و عند الانتها
 cd WASLTSHAKE
 lua bot.lua
-بعدین افتحو ترمنال جدید
-cd WASLTSHAKE
+بعدین
+cd WASLTShAKE
 nohup lua bot.lua
+</pre>
+<h1>القناه</h1>
+<a href="telegram.me/lTSHAKEl_CH"><h3>beyond</h3></a>
+<h1>المطور اذا عندکم سوال</h1>
+<a href="telegram.me/Emad_farhani"><h3>CleverGuy</h3></a>
+
 شکرا
