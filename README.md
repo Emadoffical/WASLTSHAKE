@@ -2,7 +2,7 @@
 <h2>WASLTSHAKE</h2><br><br><br>
 <h1><mark>طریقه التنصیب</mark></h1>
 <pre>
-توکن البوت تلعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
+توکن البوت تبعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
 
 git clone https://github.com/moodlIMyIl/WASLTSHAKE.git
 
@@ -24,8 +24,8 @@ cd WASLTShAKE
 nohup lua bot.lua
 </pre>
 <h1>القناه</h1>
-<a href="telegram.me/lTSHAKEl_CH"><h3>beyond</h3></a>
+<a href="telegram.me/lTSHAKEl_CH"><h3>Tshake</h3></a>
 <h1>المطور اذا عندکم سوال</h1>
-<a href="telegram.me/Emad_farhani"><h3>CleverGuy</h3></a>
+<a href="telegram.me/Emad_farhani"><h3>Emad farhani</h3></a>
 
 شکرا
