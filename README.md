@@ -1,4 +1,4 @@
-<a href="telegram.me/emad_farhani"><h1>Emad farhani</h1></a>
+<a href="https://telegram.me/emad_farhani"><h1>Emad farhani</h1></a>
 <h2>WASLTSHAKE</h2><br><br><br>
 <h1><mark>طریقه التنصیب</mark></h1>
 <pre>
@@ -24,8 +24,8 @@ cd WASLTShAKE
 nohup lua bot.lua
 </pre>
 <h1>القناه</h1>
-<a href="telegram.me/lTSHAKEl_CH"><h3>Tshake</h3></a>
+<a href="https://telegram.me/lTSHAKEl_CH"><h3>Tshake</h3></a>
 <h1>المطور اذا عندکم سوال</h1>
-<a href="telegram.me/Emad_farhani"><h3>Emad farhani</h3></a>
+<a href="https://telegram.me/Emad_farhani"><h3>Emad farhani</h3></a>
 
 شکرا
