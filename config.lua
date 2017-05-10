@@ -1,9 +1,18 @@
-bot_token = "token" --حط توکن بوتک هون
+bot_token = "token" --هنا تحط توكن البوت
 send_api = "https://api.telegram.org/bot"..bot_token
 bot_version = "6.0"
-sudo_name = "Engineer Emad Farhani" --حط اسمک هون
-sudo_id = 205816573 --حط ایدیک هون
-admingp = -1001062568114 --ایدی الکروب هون ملاحظه : اذا کروبک یوبرکروب حط بی اول الایدی 100 و بعدین الایدی
-sudo_num = "989030532835" --حط رقمک هون
-sudo_user = "Emad_farhani" --حط معرفک هون مندون @
-sudo_ch = "lTSHAKEl_CH" --(حط ایدی قناتک (اختیاری
+sudo_name = "TsHaKeTeAm" -- هنا تحط اسمك
+sudo_id = 67369633  -- هنا تحط ايديك
+admingp = -1001123797447 -- هنا تحط ايدي المجموعه 
+sudo_num = "0" -- هنا تحط رقمك
+sudo_user = "Tshakebot" -- هنا تحط معرفك
+sudo_ch = "TSHAKETEAM" -- هنا معرف قناتك
+
+--[[
+ملاحضه : لمن تحط ايدي المجموعه 
+مثلا ايدي مجموعتك هوه : 1123797447
+حط قبله 
+-100
+يعني يصير 
+-1001123797447
+]]--
