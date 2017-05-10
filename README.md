@@ -2,19 +2,26 @@
 <h2>WASLTSHAKE</h2><br><br><br>
 <h1><mark>طریقه التنصیب</mark></h1>
 <pre>
-توکن البوت تبعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
-
 git clone https://github.com/moodlIMyIl/WASLTSHAKE.git
-
+توکن البوت تبعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
+---------------
 بعدین دزو هل اوامر 
 
 sudo apt-get update
+اینتر
 sudo apt-get install lua5.1 luarocks lua-socket lua-sec redis-server curl 
+اینتر
 sudo luarocks install oauth 
+اینتر
 sudo luarocks install redis-lua 
+اینتر
 sudo luarocks install lua-cjson 
+اینتر
 sudo luarocks install ansicolors 
+اینتر
 sudo luarocks install serpent
+اینتر
+------------
 
 و عند الانتها
 cd WASLTSHAKE
