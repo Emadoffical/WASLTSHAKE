@@ -1,29 +1,11 @@
 function run(msg)
-	help_sudo = "*Sudo Commands:*\n______________________________\n"
-.."/req\n   قائمة الرغبات\n\n"
-  .."     /req>\n   لوحة المفاتيح قائمة الرغبات\n\n"
-  .."     /sendtoall {text}\n   أرسل إلى جميع\n\n"
-  .."     /users\n   کاربران ربات\n\n"
-  .."     /info {text}\n   المستخدمين الروبوت\n\n"
-  .."     /avatar {reply photo}\n   الصورة الرمزية الخاصة بك\n\n"
-  .."     /block {id},{in chat}\n   حظر المستخدم\n\n"
-  .."     /unblock {id}\n   رفع الحظر\n\n"
-  .."     /blocklist\n    المحظورین\n\n"
-  .."     /blocklist>\n   قائمه المحظورین\n\n"
-  .."     /promote {id}\n   ضیف ادمن\n\n"
-  .."     /demote {id}\n   نزل ادمن\n\n"
-  .."     /friends\n    المسؤولين\n\n"
-  .."     /friends>\n   قائمه المسؤولين\n\n"
-  .."     /del {id}\n   مرفوض\n\n"
-  .."     /chat {id}\n   بدء المحادثة\n\n"
-  .."     /end\n   اطلع على المحادثة\n\n"
-  .."     /spam {id,num,text}\n   البريد المزعج الآن\n\n"
-  .."     /key\n   قائمه الادمن\n\n"
-	about_txt = "مرحبا بکم علی بوت تواصل vip-"..bot_version.."\nمع اینلاین!\n\n`تقارير أيضا عن طريق الروبوت حتى لو كنت تستطيع البقاء على اتصال معنا. للقيام بذلك، ببساطة ترسل لنا دردشة السؤال والانتظار حتى ونحن نقبل به. يمكنك أن ترسل لنا من خلال المفتاح المطابق لرقم هاتفك للاتصال بك إذا لزم الأمر. يحتوي الروبوت أيضا قدرات أخرى، يمكنك أن تقرأ سيرة دينا، لدينا عدد من بوت الحصول على أو حتى في النسخة كبار الشخصيات من الروبوت يمكن أن ترسل لنا الرسائل القصيرة  ب.`"
-	about_key = {{{text = "🌐تابع موقعنا🌐" , url = "https://telegram.me/lTSHAKEl_CH"}},{{text = "📢تابع قناتنا📢" , url = "https://telegram.me/lTSHAKEl_CH"}},{{text = "👤بوت تواصل تبع المطور👤" , url = "https://telegram.me/farhanibot"}},{{text = "👤مهندس عماد فرهانی مقدم👤" , url = "https://telegram.me/Emad_farhani"}},{{text = "👥مجموعه دعم👥" , url = "https://telegram.me/joinchat/DESC_T93cn-ciJU_etqA"}}}
-	start_txt = "مرحبا صدیقی\n\n`من خلال هذا الروبوت حتى لو كنت ويمكن أيضا التواصل تقارير معنا. ايحتوي الروبوت أيضا على وظائف أخرى من لوحة المفاتيح أدناه يمكنك العثور عليها. مطور البوت المطور @emad_farhani`"
-	start_key = {{{text="👤مهندس عماد فرهانی مقدم👤",url="https://telegram.me/Emad_farhani"}}}
-	keyboard = {{"🔖طلب محادثة🔖"},{{text="📱أرسل لنا رقم هاتفك📱",request_contact=true},{text="🗺أرسل لنا موقعك🗺",request_location=true}},{"👤رقم هاتفنا👤","📩أرسل رسالة📩"},{"👤معلوماتنا👤","🔃النسخة الروبوت🔃"..bot_version}}
+	help_sudo = " • _اوامر المطور : _ \nֆ • • • • • • • • • • • • • ֆ\n• /req\n• قائمه طلبات الدردشه {قائمه}\n• /req>\n• قائمه طلبات الدردشه {كيبورد}\n• /sendtoall {text}\n• أرسل رساله الى الجميع\n• /users\n• لضهار الاعضاء\n• /info {text}\n• لأضافه معلومات عنك\n• /avatar {reply photo}\n• لأضافه صوره في المعلومات\n• /block {id},{in chat}\n• حظر المستخدم\n• /unblock {id}\n• الغاء حظر المستخدم\n• /blocklist\n• قائمه المحظورین {قائمه}\n• /blocklist>\n• قائمه المحظورین {كيبورد}\n• /promote {id}\n• لأضافه ادمن للبوت\n• /demote {id}\n• لتنزيل ادمن من البوت\n• /friends\n• قائمه المسؤولين {قائمه}\n• /friends>\n• قائمه المسؤولين {كيبورد}\n• /del {id}\n• رفض طلب المحادثه\n• /chat {id}\n• بدأ المحادثة\n• /end\n• الانتهاء من المحادثه\n• /spam {id,num,text}\n• ارسال رسائل بشكل (سبام) للمستخدم المزعج\n• /key\n• قائمه الاوامر \nֆ • • • • • • • • • • • • • ֆ"
+	
+	about_txt = "• اﮪﮪ ﮧעّ ♯💗 وسـﮪﮪـلا بكم في بوت التواصل\n"..bot_version.."-vip \n`معلومات عن البوت 👤“\nيمكنك ارسال لنا طلب دردشه ونحن سوف نقبلها وترسل سؤالك\nويمكنك ايضا ارسال رقم من خلال المفتاح المطابق للاتصال بك اذ لزم الامر \nويمكنك ايضآ قرائه سيرتنا الذاتيه`"
+	about_key = {{{text = "💎 DEV" , url = "https://telegram.me/EMADOFFICAL"}},{{text = "🔱 DEV" , url = "https://telegram.me/liMyil"}},{{text = "🔋 DEV" , url = "https://telegram.me/IX00XI"}},{{text = "💡CHANNEL" , url = "https://telegram.me/TSHAKETEAM"}}}
+	start_txt = "اﮪﮪ ﮧעّ ♯💗   وسـﮪﮪ ﮧلاّ  بك\n`يمكنك من خلال هذه البوت التواصل حتى لو كنت محضور . `\n`يمكنك طلب دردشه وارسال مشكلتك او سؤالك 👤“`"
+	start_key = {{{text = "💎 DEV" , url = "https://telegram.me/EMADOFFICAL"}},{{text = "🔱 DEV" , url = "https://telegram.me/liMyil"}},{{text = "🔋 DEV" , url = "https://telegram.me/IX00XI"}},{{text = "💡CHANNEL" , url = "https://telegram.me/TSHAKETEAM"}}}
+keyboard = {{"طلب محادثه 📥"},{{text="ارسل لنا رقم هاتفك 📬",request_contact=true},{text="ارسل لنا موقعك 📮",request_location=true}},{"رقم هاتفنا 📬","ارسل رساله 📩"},{"معلوماتنا 👥","نسخه البوت 👨‍🏭"..bot_version}}
 	------------------------------------------------------------------------------------
 	blocks = load_data("blocks.json")
 	chats = load_data("chats.json")
@@ -58,14 +40,14 @@ function run(msg)
 		else
 			if contact[userid] then
 				if contact[userid][msg.contact.phone_number] then
-					return send_msg(msg.from.id, "`كنت بالفعل قد ارسلت هاذا الرقم`❗️\n❗️*You sent this number ago*", true)
+					return send_msg(msg.from.id, "`لقد ارسلت هذه الرقم بلفعل`❗️\n❗️*You sent this number ago*", true)
 				else
 					if #contact[userid] > 10 then
-						return send_msg(msg.from.id, "`أنت لم تعد قادرة على ارسال رقم الخاص بك!`❗️\n❗️*You Can't send new number!*", true)
+						return send_msg(msg.from.id, "`أنت لم تعد قادرآ على ارسال رقم الخاص بك!`❗️\n❗️*You Can't send new number!*", true)
 					end
 					table.insert(contact[userid], msg.contact.phone_number)
 					save_data("contact.json", contact)
-					send_msg(msg.from.id, "`تم تسلیم رقمک شکرا`❗️\n❗️*You'r number Sent*", true)
+					send_msg(msg.from.id, "`تم تسلیم رقمك شکرا`❗️\n❗️*You'r number Sent*", true)
 					send_msg(admingp, (msg.from.first_name or "").." "..(msg.from.last_name or "").." [@"..(msg.from.username or "-----").."] ("..msg.from.id..")", false)
 					return send_fwrd(admingp, msg.from.id, msg.message_id)
 				end
@@ -73,7 +55,7 @@ function run(msg)
 				contact[userid] = {}
 				table.insert(contact[userid], msg.contact.phone_number)
 				save_data("contact.json", contact)
-				send_msg(msg.from.id, "`تم تسلیم رقمک شکرا`✔️\n✔️*You'r number Sent*", true)
+				send_msg(msg.from.id, "`تم تسلیم رقمك شکرا`✔️\n✔️*You'r number Sent*", true)
 				send_msg(admingp, (msg.from.first_name or "").." "..(msg.from.last_name or "").." [@"..(msg.from.username or "-----").."] ("..msg.from.id..")", false)
 				return send_fwrd(admingp, msg.from.id, msg.message_id)
 			end
@@ -83,7 +65,7 @@ function run(msg)
 		else
 			if location[userid] then
 				if location[userid][msg.location.longitude] then
-					return send_msg(msg.from.id, "`كنت قد أرسلت في وقت سابق هاذا الموقع`❗️\n❗️*You sent this location ago*", true)
+					return send_msg(msg.from.id, "`لقد ارسلت هذه الموقع من قبل`❗️\n❗️*You sent this location ago*", true)
 				else
 					if #location[userid] > 10 then
 						return send_msg(msg.from.id, "`لا يمكنك إرسال موقع آخر!`❗️\n❗️*You Can't send new location!*", true)
@@ -127,7 +109,7 @@ function run(msg)
 				return send_msg(admingp, "❗️*Spamming Stoped*", true)
 			end
 		else
-			return send_msg(admingp, "`تذکر امام هاذا الامر حط ایدی الشخص`\n*after this command type Target ID*", true)
+			return send_msg(admingp, "`بعد هذه الامر اكتب ايدي الشخص`\n*after this command type Target ID*", true)
 		end
 	elseif msg.text:find("/sendtoall") and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
@@ -139,9 +121,9 @@ function run(msg)
 			end
 			return send_msg(admingp, "`رسالتك الی"..i.." تم تسلیمها`\n*yor message Sent to "..i.." people*", true)
 		else
-			return send_msg(admingp, "`بعد هاذا الامر اکتب رسالتک`\n*after this command type Your Message*", true)
+			return send_msg(admingp, "`بعد هاذا الامر اکتب رسالتك`\n*after this command type Your Message*", true)
 		end
-	elseif msg.text == "/contact" or msg.text:lower() == "my contact" or msg.text == "👤رقم هاتفنا👤" then
+	elseif msg.text == "/contact" or msg.text:lower() == "my contact" or msg.text == "رقم هاتفنا 📬" then
 		return send_phone(msg.from.id, "+"..sudo_num, sudo_name)
 	elseif msg.text == "/users" and msg.chat.id == admingp then
 		local list = ""
@@ -158,7 +140,7 @@ function run(msg)
 				table.insert(list, {"/unblock "..k})
 			end
 		end
-		return send_key(admingp, "*For unblock select a item:*", list, true)
+		return send_key(admingp, "`لالغاء الحظر اختر احد المفاتيح`\n*For unblock select a item :*", list, true)
 	elseif msg.text == "/blocklist" and msg.chat.id == admingp then
 		local list = ""
 		i=0
@@ -168,7 +150,7 @@ function run(msg)
 				list = list..i.."- *"..k.."*\n"
 			end
 		end
-		return send_msg(admingp, "*Block list:\n\n*"..list, true)
+		return send_msg(admingp, "`قائمه المحضورين` :\n*Block list :*\n\n"..list, true)
 	elseif msg.text == "/friends>" and msg.chat.id == admingp then
 		local list = {{"/key"}}
 		for k,v in pairs(admins) do
@@ -186,7 +168,7 @@ function run(msg)
 				list = list..i.."- *"..k.."*\n"
 			end
 		end
-		return send_msg(admingp, "*Friends list:\n\n*"..list, true)
+		return send_msg(admingp, "`قائمه الاصدقاء :`\n*Friends list :*\n\n"..list, true)
 	elseif msg.text == "/req>" and msg.chat.id == admingp then
 		local list = {{"/key"}}
 		for k,v in pairs(requests) do
@@ -194,8 +176,8 @@ function run(msg)
 				table.insert(list, {"/chat"..k,"/del"..k,"/block"..k})
 			end
 		end
-		return send_key(admingp, "*For accept or delete request select a item:*", list, true)
-	elseif msg.text == "/req" or msg.text:lower() == "chat request" or msg.text == "🔖طلب محادثة🔖" then
+		return send_key(admingp,"`لقبول أو حذف طلب یرجی اختیار المفاتيح` :\n*For accept or delete request select a item :*", list, true)
+	elseif msg.text == "/req" or msg.text:lower() == "chat request" or msg.text == "طلب محادثه 📥" then
 		if msg.chat.id == admingp then
 			local list = ""
 			i=0
@@ -208,14 +190,14 @@ function run(msg)
 			return send_msg(admingp, "*Request list:\n\n*"..list, true)
 		else
 			if requests[userid] then
-				return send_msg(msg.from.id, "`کنت بالفعل قد ارسلت طلب محادثه یرجی الانتظار وسوف نقوم بالرد شکرا`❗️\n❗️*You have Open Request please wait*", true)
+				return send_msg(msg.from.id, "`لقد ارسلت طلب محادثه يرجئ التحلي بلصبر وسوف نقوم بالرد`❗️\n❗️*You have Open Request please wait*", true)
 			elseif msg.from.id == chats.id then
 				return send_msg(msg.from.id, "`!!راح اقوله!!`", true)
 			else
 				requests[userid] = true
 				save_data("requests.json", requests)
 				send_msg(msg.from.id, "`تم إرسال طلبك، یرجی الانتظار شکرا`✔️\n✔️*You'r request Sent, please wait*", true)
-				local text = " لديك طلب الدردشة من:\nYou have chat request of this user:\n\n"
+				local text = " لديك طلب الدردشه من:\nYou have chat request of this user:\n\n"
 				.."Name: "..(msg.from.first_name or "").." "..(msg.from.last_name or "").."\nUser: @"..(msg.from.username or "-----").."\nID: "..msg.from.id.."\n\n"
 				--.."برای پزیرش گزینه ی اول را ارسال کنید، برای رد گزینه ی دوم را و برای بلاک کردن گزینه ی سوم را:\nfor accept press first option or for delete request press option 2 and for block user, press option 3:\n\n"
 				.."1- /chat"..msg.from.id.."\n\n2- /del"..msg.from.id.."\n\n3- /block"..msg.from.id
@@ -225,29 +207,29 @@ function run(msg)
 				return send_msg(admingp, text, false)
 			end
 		end
-	elseif msg.text == '/sms' or msg.text:lower() == "send sms" or msg.text == "📩أرسل رسالة📩" then
+	elseif msg.text == '/sms' or msg.text:lower() == "send sms" or msg.text == "ارسل رساله 📩" then
 		if admins[userid] then
 			if msg.reply_to_message then
 				if msg.reply_to_message.from.id == bot.id then
-					return send_msg(msg.from.id, "`هاذا الامر /sms استخدمه بل ریپلی و اکتب رسالتک شکرا`\n*Reply this command or /sms on a message*", true)
+					return send_msg(msg.from.id, "`هذه الامر /sms استخدمه بل رد و اکتب رسالتك شکرا`\n*Reply this command or /sms on a message*", true)
 				end
 				if msg.reply_to_message.text == false or msg.reply_to_message.text == nil or msg.reply_to_message.text == "" or msg.reply_to_message.text == " " then
 					return send_msg(admingp, "`قادرا على إرسال رسالة نصية فقط.`❗️", true)
 				end
 				if string.len (msg.reply_to_message.text) > 150 then
-					return send_msg(msg.from.id, "`هاذا الامر /sms استخدمه بل ریپلی و اکتب رسالتک شکرا`❗️\n❗️*You'r message Sent, _don't send again*", true)
+					return send_msg(msg.from.id, "`هذه الامر /sms استخدمه بل رد و اکتب رسالتك شکرا`❗️\n❗️*You'r message Sent, _don't send again*", true)
 				end
 				send_sms("00"..sudo_num, "[@"..(msg.from.username or "-----").."] ("..msg.from.id..")\n\n"..msg.reply_to_message.text)
 				return send_msg(msg.from.id, "`تم إرسال رسالتك، لا ترسل رسائل اخری حتی نجیب`❗️\n❗️*You'r message Sent, don't send again*", true)
 			else
-				return send_msg(msg.from.id, "`هاذا الامر /sms استخدمه بل ریپلی و اکتب رسالتک شکرا`❗️\n❗️*Reply this command or /sms on a message*", true)
+				return send_msg(msg.from.id, "`هذه الامر /sms استخدمه بل رد و اکتب رسالتك شکرا`❗️\n❗️*Reply this command or /sms on a message*", true)
 			end
 		else
 			return send_msg(msg.from.id, "`انت لا تکون من اصدقاء و لا یمکنت تستخدم هذه الخدمه`❗️\n❗️*You are Not My Friend and you not allow for use this command*", true)
 		end
 	elseif msg.text == "/key" and msg.chat.id == admingp then
 		adminkey = {{"/end","/help","/block"},{"/req>","/req","/users"},{"/blocklist>","/blocklist"},{"/friends>","/friends"}}
-		return send_key(admingp, "*Admin Keyboard:*", adminkey, true)
+		return send_key(admingp,"`كيبورد الادمن :`\n*Admin Keyboard :*", adminkey, true)
 	elseif msg.reply_to_message and msg.text == "/avatar" and msg.chat.id == admingp then
 		if msg.reply_to_message.photo then
 			local i = #msg.reply_to_message.photo
@@ -262,7 +244,7 @@ function run(msg)
 			f:close()
 			return send_msg(admingp, "`تم حفظ الصورة الرمزية`\n*You'r avatar Saved*", true)
 		end
-	elseif msg.text:find("/info") or msg.text:lower() == "my info" or msg.text == "👤معلوماتنا👤" then
+	elseif msg.text:find("/info") or msg.text:lower() == "my info" or msg.text == "معلوماتنا 👥" then
 		if msg.chat.id == admingp then
 			local usertarget = msg.text:input()
 			if usertarget then
@@ -270,9 +252,9 @@ function run(msg)
 				file:write(usertarget)
 				file:flush()
 				file:close() 
-				return send_msg(admingp, "`تم حفظ النص فی معلوماتک`❗️\n❗️*You'r information Saved*", true)
+				return send_msg(admingp, "`تم حفظ النص فی معلوماتك`❗️\n❗️*You'r information Saved*", true)
 			else
-				return send_msg(admingp, "`بعد هاذا الامر ادخل النص تبع معلوماتک`❗️\n❗️*after this command type Your Information*", true)
+				return send_msg(admingp, "`بعد هذه الامر ادخل النص الخاص بمعلوماتك`❗️\n❗️*after this command type Your Information*", true)
 			end
 		else
 			local f = io.open("./about.txt")
@@ -283,7 +265,7 @@ function run(msg)
 			else
 				infotxts = ""
 			end
-			bioinfo = infotxts.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [NORTONteam](https://telegram.me/telenorton_ch)"
+			bioinfo = infotxts.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [EMADOFFICAL](https://telegram.me/EMADOFFICAL)"
 			send_msg(msg.chat.id, bioinfo, true)
 			local f = io.open("./avatar.webp")
 			if f then
@@ -295,46 +277,46 @@ function run(msg)
 		local usertarget = msg.text:input()
 		if usertarget then
 			if blocks[tostring(usertarget)] then
-				return send_msg(admingp, "`هاذا الشخص محظور`❗️\n❗️*You'r target are Block*", true)
+				return send_msg(admingp, "`هذه الشخص محظور`❗️\n❗️*You'r target are Block*", true)
 			end
 			admins[tostring(usertarget)] = true
 			save_data("admins.json", admins)
-			send_msg(tonumber(usertarget), "`تم اختیارک کصدیق مفضل`✔️\n✔️*You promoted to Best Friend*", true)
-			return send_msg(admingp, "`تم اختیار هاذا الشخص کصدیق`\n*You'r target promoted to Best Friend*", true)
+			send_msg(tonumber(usertarget), "`تم اختيارك کصدیق مفضل`✔️\n✔️*You promoted to Best Friend*", true)
+			return send_msg(admingp, "`تم اختیار هذه الشخص کصدیق`\n*You'r target promoted to Best Friend*", true)
 		else
-			return send_msg(admingp, "`بعد هاذا الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
+			return send_msg(admingp, "`بعد هذه الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
 		end
 	elseif msg.text:find('/demote') and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
 		if usertarget then
 			if blocks[tostring(usertarget)] then
-				return send_msg(admingp, "`هاذا الشخص محظور`❗️\n❗️You'r target are Block*", true)
+				return send_msg(admingp, "`هذه الشخص محظور`❗️\n❗️You'r target are Block*", true)
 			end
 			admins[tostring(usertarget)] = false
 			save_data("admins.json", admins)
 			send_msg(tonumber(usertarget), "`انت بلفعل لم تکن صدیقنا`❗️\n❗️*You demoted of Best Friend*", true)
-			return send_msg(admingp, "`هاذا الشخص بلفعل لم یکن صدیقک`❗️\n❗️*You'r target demoted of Best Friend*", true)
+			return send_msg(admingp, "`هذه الشخص بلفعل لم یکن صديقك`❗️\n❗️*You'r target demoted of Best Friend*", true)
 		else
-			return send_msg(admingp, "`بعد هاذا الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
+			return send_msg(admingp, "`بعد هذه الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
 		end
 	elseif msg.text:find('/block') and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
 		if usertarget then
 			if tonumber(usertarget) == sudo_id or tonumber(usertarget) == bot.id then
-				return send_msg(admingp, "`لا تقدر علی ان تحظر نفسک`❗️\n❗️*You can't block You'r Self*", true)
+				return send_msg(admingp, "`لا تستطيع حضر نفسك`❗️\n❗️*You can't block You'r Self*", true)
 			end
 			if blocks[tostring(usertarget)] then
-				return send_msg(admingp, "`هاذا الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
+				return send_msg(admingp, "`هذه الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
 			end
 			blocks[tostring(usertarget)] = true
 			save_data("blocks.json", blocks)
-			send_msg(tonumber(usertarget), "`تم حظرک من البوت`❗️\n❗️*You are Blocked!*", true)
+			send_msg(tonumber(usertarget), "`تم حضرك من البوت`❗️\n❗️*You are Blocked!*", true)
 			send_msg(admingp, "`تم حظر هاذا الشخص`❗️\n❗️*You'r target Blocked*", true)
 			if requests[tostring(usertarget)] then
 				requests[tostring(usertarget)] = false
 				save_data("requests.json", requests)
 				send_msg(tonumber(usertarget), "`تم رفض طلب الدردشة`❗️\n❗️*You'r chat request Deleted*", true)
-				send_msg(admingp, "`تم رفض طلب دردشه هاذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
+				send_msg(admingp, "`تم رفض طلب دردشه هذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
 			elseif chats.id == tonumber(usertarget) then
 				chats.id = 0
 				save_data("chats.json", chats)
@@ -346,32 +328,32 @@ function run(msg)
 			if chats.id > 0 then
 				blocks[tostring(chats.id)] = true
 				save_data("blocks.json", blocks)
-				send_msg(chats.id, "`تم حظرک من البوت`❗️\n❗️*You are Blocked!*", true)
-				send_msg(admingp, "`تم حظر هاذا الشخص`❗️\n❗️*You'r target Blocked*", true)
+				send_msg(chats.id, "`تم حضرك من البوت`❗️\n❗️*You are Blocked!*", true)
+				send_msg(admingp, "`تم حظر هذه الشخص`❗️\n❗️*You'r target Blocked*", true)
 				chats.id = 0
 				save_data("chats.json", chats)
 				send_msg(chats.id, "`تم اغلاق الدردشه`🔚\n🔚*You'r chatroom Closed*", true)
 				return send_msg(admingp, "`تم اغلاق الدردشه`🔚\n🔚*You'r chatroom Closed*", true)
 			else
 				if msg.text == "/block" then
-					return send_msg(admingp, "`بعد هاذا الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
+					return send_msg(admingp, "`بعد هذه الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
 				else
 					local usertarget = msg.text:gsub("/block","")
 					if tonumber(usertarget) == sudo_id or tonumber(usertarget) == bot.id then
-						return send_msg(admingp, "`لا تقدر علی ان تحظر نفسک`❗️\n❗️*You can't block You'r Self*", true)
+						return send_msg(admingp, "`لا تسطيع حظر نفسك`❗️\n❗️*You can't block You'r Self*", true)
 					end
 					if blocks[tostring(usertarget)] then
-						return send_msg(admingp, "`هاذا الشخص بالفعل محظور`❗️\n❗️*You'r target are Block*", true)
+						return send_msg(admingp, "`هذه الشخص بالفعل محظور`❗️\n❗️*You'r target are Block*", true)
 					end
 					blocks[tostring(usertarget)] = true
 					save_data("blocks.json", blocks)
-					send_msg(tonumber(usertarget), "`تم حظرک من البوت`❗️\n❗️*You are Blocked!*", true)
-					send_msg(admingp, "`تم حظر هاذا الشخص`❗️\n❗️*You'r target Blocked*", true)
+					send_msg(tonumber(usertarget), "`تم حظرك من البوت`❗️\n❗️*You are Blocked!*", true)
+					send_msg(admingp, "`تم حظر هذه الشخص`❗️\n❗️*You'r target Blocked*", true)
 					if requests[tostring(usertarget)] then
 						requests[tostring(usertarget)] = false
 						save_data("requests.json", requests)
 						send_msg(tonumber(usertarget), "`تم رفض طلب الدردشة`❗️\n❗️*You'r chat request Deleted*", true)
-						send_msg(admingp, "`تم رفض طلب دردشه هاذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
+						send_msg(admingp, "`تم رفض طلب دردشه هذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
 					elseif chats.id == tonumber(usertarget) then
 						chats.id = 0
 						save_data("chats.json", chats)
@@ -388,12 +370,12 @@ function run(msg)
 			if blocks[tostring(usertarget)] then
 				blocks[tostring(usertarget)] = false
 				save_data("blocks.json", blocks)
-				send_msg(tonumber(usertarget), "`تم الغا حظرک من البوت`❗️\n❗️*You are Unblocked!*", true)
-				return send_msg(admingp, "`تم الغا حظر هاذا الشخص من البوت`❗️\n❗️*You'r target Unblocked*", true)
+				send_msg(tonumber(usertarget), "`تم الغاء حضرك من البوت`❗️\n❗️*You are Unblocked!*", true)
+				return send_msg(admingp, "`تم الغاء حظر هاذا الشخص من البوت`❗️\n❗️*You'r target Unblocked*", true)
 			end
-			return send_msg(admingp, "`هاذا الشخص لیس محظور`❗️\n❗️*You target Not Block*", true)
+			return send_msg(admingp, "`هذه الشخص لیس محظور`❗️\n❗️*You target Not Block*", true)
 		else
-			return send_msg(admingp, "`بعد هاذا الامر ضح ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
+			return send_msg(admingp, "`بعد هذه الامر ضع ایدی الشخص`❗️\n❗️*after this command type Target ID*", true)
 		end
 	elseif msg.text:find('/del') and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
@@ -402,13 +384,13 @@ function run(msg)
 				requests[tostring(usertarget)] = false
 				save_data("requests.json", requests)
 				send_msg(tonumber(usertarget), "`تم رفض طلب الدردشة`❗️\n❗️*You'r chat request Deleted*", true)
-				return send_msg(admingp, "`تم رفض طلب دردشه هاذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
+				return send_msg(admingp, "`تم رفض طلب دردشه هذه الشخص`❗️\n❗️*You'r target chat request Deleted*", true)
 			else
-				return send_msg(admingp, "`لا یوجد طلب محادثه من هاذا الشخص`❗️\n❗️*You'r target Have Not chat request*", true)
+				return send_msg(admingp, "`لا یوجد طلب محادثه من هذه الشخص`❗️\n❗️*You'r target Have Not chat request*", true)
 			end
 		else
 			if msg.text == "/del" then
-				return send_msg(admingp, "`بعد هاذا الامر ضع ایدی`❗️\n❗️*after this command type Target ID*", true)
+				return send_msg(admingp, "`بعد هذه الامر ضع ایدی`❗️\n❗️*after this command type Target ID*", true)
 			else
 				local usertarget = msg.text:gsub("/del","")
 				if requests[tostring(usertarget)] then
@@ -423,38 +405,38 @@ function run(msg)
 		end
 	elseif msg.text:find('/chat') and msg.chat.id == admingp then
 		if chats.id > 0 then
-			return send_msg(admingp, "`لدیک دردشة مفتوحه، یرجی إغلاقه أولا`❗️\n❗️*You have Open Chat, first send* /end", true)
+			return send_msg(admingp, "`لديك دردشة مفتوحه، یرجی إغلاقه أولا`❗️\n❗️*You have Open Chat, first send* /end", true)
 		end
 		local usertarget = msg.text:input()
 		if usertarget then
 			if blocks[tostring(usertarget)] then
-				return send_msg(admingp, "`هاذا الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
+				return send_msg(admingp, "`هذه الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
 			end
 			requests[tostring(usertarget)] = false
 			save_data("requests.json", requests)
 			chats.id = tonumber(usertarget)
 			save_data("chats.json", chats)
-			send_msg(tonumber(usertarget), "`تم بدء الدردشه یمکنک البدء فی المحادثه`✔️\n✔️*Chat Started*", true)
+			send_msg(tonumber(usertarget), "`تم بدء الدردشه يمكنك البدء فی المحادثه`✔️\n✔️*Chat Started*", true)
 			return send_msg(admingp, "`بدأ الدردشة`✔️\n✔️*Chat Started*", true)
 		else
 			if msg.text == "/chat" then
-				return send_msg(admingp, "`بعد هاذا الامر ضع ایدی`❗️\n❗️*after this command type Target ID*", true)
+				return send_msg(admingp, "`بعد هذه الامر ضع ایدی`❗️\n❗️*after this command type Target ID*", true)
 			else
 				local usertarget = msg.text:gsub("/chat","")
 				if blocks[tostring(usertarget)] then
-					return send_msg(admingp, "`هاذا الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
+					return send_msg(admingp, "`هذه الشخص بلفعل محظور`❗️\n❗️*You'r target are Block*", true)
 				end
 				requests[tostring(usertarget)] = false
 				save_data("requests.json", requests)
 				chats.id = tonumber(usertarget)
 				save_data("chats.json", chats)
-				send_msg(tonumber(usertarget), "`تم بدء الدردشه یمکنک البدء فی المحادثه`✔️\n✔️*Chat Started*", true)
+				send_msg(tonumber(usertarget), "`تم بدء الدردشه يمكنك البدء فی المحادثه`✔️\n✔️*Chat Started*", true)
 				return send_msg(admingp, "`بدأ الدردشة`✔️\n✔️*Chat Started*", true)
 			end
 		end
 	elseif msg.text == "/end" and msg.chat.id == admingp then
 		if chats.id == 0 then
-			return send_msg(admingp, "`لا یوجد دردشة مفتوحة`❗️\n❗️*You haven't Open Chat*", true)
+			return send_msg(admingp, "`لا توجد دردشة مفتوحة`❗️\n❗️*You haven't Open Chat*", true)
 		end
 		send_msg(admingp, "`الدردشة مع "..chats.id.." تم اغلاقها`❗️\n❗️*Chat with "..chats.id.." Closed*", true)
 		send_msg(chats.id, "`تم اغلاق الدردشه`❗️\n❗️*Chat Closed*", true)
@@ -467,22 +449,22 @@ function run(msg)
 		else
 			return send_inline(msg.chat.id, about_txt, about_key)
 		end
-	elseif msg.text == "/about" or msg.text:lower() == "about v"..bot_version or msg.text == "🔃النسخة الروبوت🔃"..bot_version then
+	elseif msg.text == "/about" or msg.text:lower() == "about v"..bot_version or msg.text == "نسخه البوت 👨‍🏭"..bot_version then
 		return send_inline(msg.chat.id, about_txt, about_key)
 	end
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 	if msg.chat.id == admingp and chats.id > 0 then
 		return send_fwrd(chats.id, msg.chat.id, msg.message_id)
 	elseif msg.chat.id == admingp and chats.id == 0 then
-		return send_msg(admingp, "`لا یوجد دردشه مفتوحه`❗️\n❗️*You haven't Open Chat*", true)
+		return send_msg(admingp, "`لا توجد دردشه مفتوحه`❗️\n❗️*You haven't Open Chat*", true)
 	end
 	if msg.from.id == chats.id then
 		return send_fwrd(admingp, msg.from.id, msg.message_id)
 	else
 		if requests[tostring(msg.from.id)] then
-			return send_msg(msg.from.id, "`یرجی الانتظار حتی نجیب علی طلبک شکرا`❗️\n❗️*Please wait for "..sudo_name.." Accept You*", true)
+			return send_msg(msg.from.id, "`یرجی الانتظار حتی نجیب علی طلبك شکرا`❗️\n❗️*Please wait for "..sudo_name.." Accept You*", true)
 		else
-			return send_msg(msg.from.id, "`ارسال بالاول طلب محادثه`❗️\n❗️*First send chat request with* /req", true)
+			return send_msg(msg.from.id, "`ارسل طلب محادثه اولا`❗️\n❗️*First send chat request with* /req", true)
 		end
 	end
 end
@@ -497,7 +479,7 @@ function inline(msg)
 	else
 		infotxtin = ""
 	end
-	bioinfo = infotxtin.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [nprtonTEAM](https://telegram.me/TeleNorton_ch)"
+	bioinfo = infotxtin.."*Name:* "..sudo_name.."\n*Username:* [@"..sudo_user.."](https://telegram.me/"..sudo_user..")\n*Mobile:* +"..sudo_num.."\n*Telegram ID:* "..sudo_id.."\n*Channel:* [@"..sudo_ch.."](https://telegram.me/"..sudo_ch..")\n\n_Powered by_ [EMADOFFICAL](https://telegram.me/EMADOFFICAL)"
 	tabless = '[{"text":"حسابي الرئيسي","url":"https://telegram.me/'..sudo_user..'"}],[{"text":"قناتی  ","url":"https://telegram.me/'..sudo_ch..'"}],[{"text":"قناه المطور","url":"https://telegram.me/lTSHAKEl_CH"},{"text":"مطور البوت","url":"https://telegram.me/Emad_farhani"}]'
 	info_inline = '{"type":"article","parse_mode":"Markdown","id":"2","title":"معلوماتی","description" كل ما يجب أن تعرفه عن لي...","message_text":"'..bioinfo..'","thumb_url":"'..thumb..'pv_bio.png","reply_markup":{"inline_keyboard":['..tabless..']}}'
 	phone_inline = '{"type":"contact","id":"1","phone_number":"'..sudo_num..'","first_name":"'..sudo_name..'","last_name":"","thumb_url":"'..thumb..'pv_phone.png"},'
