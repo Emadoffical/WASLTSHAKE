@@ -2,6 +2,7 @@
 <h2>WASLTSHAKE</h2><br><br><br>
 <h1><mark>طریقه التنصیب</mark></h1>
 <pre>
+---------------
 git clone https://github.com/moodlIMyIl/WASLTSHAKE.git
 توکن البوت تبعکم و ایدیکم و ایدی الکروب حطو بل ملف کانفیگ تحذیر اذا مجموعتکم سویر بالاول الایدی حطو 100 و بعدین الایدی و ایضا ارجا الانشا مجموعه خاص للبوت
 ---------------
@@ -26,9 +27,11 @@ sudo luarocks install serpent
 و عند الانتها
 cd WASLTSHAKE
 lua bot.lua
+---------------
 بعدین
 cd WASLTShAKE
 nohup lua bot.lua
+---------------
 </pre>
 <h1>القناه</h1>
 <a href="https://telegram.me/lTSHAKEl_CH"><h3>Tshake</h3></a>
