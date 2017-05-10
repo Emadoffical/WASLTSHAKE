@@ -1,7 +1,7 @@
 bot_token = "token" --حط توکن بوتک هون
 send_api = "https://api.telegram.org/bot"..bot_token
 bot_version = "6.0"
-sudo_name = "Engineer Emad Farhani" حط اسمک هون
+sudo_name = "Engineer Emad Farhani" --حط اسمک هون
 sudo_id = 205816573 --حط ایدیک هون
 admingp = -1001062568114 --ایدی الکروب هون ملاحظه : اذا کروبک یوبرکروب حط بی اول الایدی 100 و بعدین الایدی
 sudo_num = "989030532835" --حط رقمک هون
