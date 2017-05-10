@@ -21,7 +21,7 @@ sudo luarocks install ansicolors
 اینتر
 sudo luarocks install serpent
 اینتر
-------------
+---------------
 
 و عند الانتها
 cd WASLTSHAKE
